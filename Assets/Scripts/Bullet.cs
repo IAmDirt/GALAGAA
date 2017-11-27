@@ -10,19 +10,23 @@ public class Bullet : MonoBehaviour
 		rb.velocity = direction * speed;
 	}
 
+    private void OnCollisionEnter2D(Collision2D coll)
+    {
+        Destroy(gameObject);
+    }
+        /*private void OnCollisionEnter2D(Collision2D coll)
+        {
+            if (coll.gameObject.tag == "enemy") 
+            {
+                GameObject objectWeHit = coll.gameObject;
+                Destroy (objectWeHit);
+                Destroy (gameObject);
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
 
-	private void OnCollisionEnter2D(Collision2D coll)
-	{
-		if (coll.gameObject.tag == "enemy") 
-		{
-			GameObject objectWeHit = coll.gameObject;
-			Destroy (objectWeHit);
-			Destroy (gameObject);
-		}
 
-		if (coll.gameObject.tag == "Player") 
-		{
-
-		}
-	}
-}
+        }*/
+    }

@@ -2,13 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class spawnenemy : MonoBehaviour {
-
-	public float distanceMultiplier;
-	public float speedMultiplier;
-
-	float xStart;
-	float timeOffset;
+public class SpawnRegularEnemy : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -17,7 +11,6 @@ public class spawnenemy : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
-
+		
 	}
 }
