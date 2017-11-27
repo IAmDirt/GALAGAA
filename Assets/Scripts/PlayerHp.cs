@@ -15,7 +15,7 @@ public class PlayerHp : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D coll)
     {
-        if (coll.gameObject.tag == "BULLET")
+        if (coll.gameObject.tag == "BULLET2")
         {
             Playerhealth--;
         }
